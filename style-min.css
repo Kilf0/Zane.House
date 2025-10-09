@@ -493,11 +493,8 @@ navbar {
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 }
-.reach-out-content #contact-form:nth-child(3) {
-	background-color: black;
-}
 
-/* UPCOMING PROJECTS */
+/* Upcoming Projects */
 .projects-upcoming {
 	padding: 5em 0;
 	background-color: white;
@@ -584,6 +581,8 @@ navbar {
 .contact-hero-text h2 {
 	max-width: 65%;
 }
+
+
 .contact-register {
 	display: flex;
 	flex-direction: column;
@@ -592,29 +591,97 @@ navbar {
 	background: white;
 	padding: 2em;
 }
+
 .contact-register-text {
-	
+	margin: 2em;
+}
+.contact-register-text h2 {
+	background: #f1f1f1;
+	border-radius: 15px;
+	padding: 1em 9em;
 }
 .contact-register-content {
 	
 }
 .contact-register-content-container {
-	padding: 3em 8em;
-	background: #d4d4d4;
-	border: solid white 2px;
+	padding: 3em 0em;
+	background: ;
+	border: solid #242424 2px;
 	border-radius: 25px;
+	
 }
 .contact-register-content-container #contact-form {
-	padding: 2em;
+	padding: 0em;
 	color: black;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
-	
 }
 
-
-
+.contact-phone {
+	display: flex;
+	flex-direction: column;
+	padding: 5em;
+	align-items: center;
+}
+.contact-phone h2 {
+	background: #f1f1f1;
+	padding: 1em 10em;
+	border-radius: 15px;
+}
+.contact-phone #call-button, .contact-phone #text-button {
+	padding: 6px 14px;
+	background: #d4d2d4;
+	border-radius: 25px;
+	transition: 1.2s ease;
+}
+.contact-phone #call-button:hover, .contact-phone #text-button:hover {
+	background: #242424;
+	color: white;
+}
+.contact-phone #call-button.open, .contact-phone #text-button.open {
+	background: #242424;
+	color: white;
+}
+.phone-number {
+	padding-top: 2em;
+	display: flex;
+	flex-direction: row;
+	gap: 5em;
+}
+.phone-bg {
+	flex-direction: column;
+	background: ;
+	border: solid black 2px;
+	border-radius: 25px;
+	padding: 10px;
+	text-align: center;
+	text-wrap: wrap;
+	max-width: 400px;
+	height: 750px;
+}
+.phone-number #text-phone {
+	opacity: 0;
+	transform: translateX(250px);
+}
+.phone-number #text-phone.show {
+	animation: fadeInRight 1.2s ease forwards;
+}
+.phone-number #call-phone {
+	opacity: 0;
+	transform: translateX(-250px);
+}
+.phone-number #call-phone.show {
+	animation: fadeInLeft 1.2s ease forwards;
+}
+.phone-bg p {
+	margin-top: 50px;
+	line-height: 50px;
+}
+.phone-bg h3 {
+	padding-bottom: 25px;
+	border-bottom: solid black 2px;
+}
 
 /* CONTACT SUBMISSION PAGE */
 .submission {
