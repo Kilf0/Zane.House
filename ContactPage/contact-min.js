@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("scroll-navbar");window.addEventListener("scroll",(()=>{(window.scrollY||document.documentElement.scrollTop)>0?e.classList.add("show"):e.classList.remove("show")}))}));
