@@ -17,62 +17,21 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/ContactPage\/contact-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/ContactPage\/contact-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/ContactPage\/contact.html" : {
+    "\/contact.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/ContactPage\/contact.html",
+      "oAP" : "\/contact.html",
       "oF" : 0
     },
-    "\/ContactPage\/contact.js" : {
+    "\/contact.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/ContactPage\/contact-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/HomePage\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/HomePage\/index.html",
-      "oF" : 0
-    },
-    "\/HomePage\/main-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/HomePage\/main-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/HomePage\/main.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/HomePage\/main-min.js",
+      "oAP" : "\/contact-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -870,47 +829,43 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/ProjectPage\/projects-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/ProjectPage\/projects-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/ProjectPage\/projects.html" : {
+    "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/ProjectPage\/projects.html",
+      "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/ProjectPage\/projects.js" : {
+    "\/main.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/ProjectPage\/projects-min.js",
+      "oAP" : "\/main-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/style-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
+    "\/projects.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/style-min-min.css",
+      "oAP" : "\/projects.html",
+      "oF" : 0
+    },
+    "\/projects.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects-min.js",
       "oF" : 0,
-      "pg" : 0
+      "sC" : 3,
+      "tS" : 0
     },
     "\/style.css" : {
       "aP" : 1,
