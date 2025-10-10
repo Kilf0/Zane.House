@@ -465,35 +465,6 @@ navbar {
 	animation: fadeInRight 1s ease forwards 0.5s;
 }
 
-/* PROJECT REACH OUT */
-
-.reach-out {
-	display: flex;
-	padding: 0em;
-	color: black;
-	justify-content: center;
-	align-content: center;
-}
-.reach-out-container {
-	padding: 16em 24em;
-	background-color: #242424;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: white;
-}
-.reach-out-text {
-	
-}
-.reach-out-contact #contact-form {
-	background-color: white;
-	padding: 2em;
-	color: black;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-}
-
 /* Upcoming Projects */
 .projects-upcoming {
 	padding: 5em 0;
@@ -582,7 +553,6 @@ navbar {
 	max-width: 65%;
 }
 
-
 .contact-register {
 	display: flex;
 	flex-direction: column;
@@ -591,33 +561,12 @@ navbar {
 	background: white;
 	padding: 2em;
 }
-
 .contact-register-text {
-	margin: 2em;
-}
-.contact-register-text h2 {
+	padding: 1em 10em;
 	background: #f1f1f1;
 	border-radius: 15px;
-	padding: 1em 9em;
+	margin: 3em 0 5em 0;
 }
-.contact-register-content {
-	
-}
-.contact-register-content-container {
-	padding: 3em 0em;
-	background: ;
-	border: solid #242424 2px;
-	border-radius: 25px;
-	
-}
-.contact-register-content-container #contact-form {
-	padding: 0em;
-	color: black;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-}
-
 .contact-phone {
 	display: flex;
 	flex-direction: column;
@@ -704,11 +653,60 @@ navbar {
 	margin: 5em 0;
 	align-self: center;
 }
-.submission-buttons button {
+.submission-buttons a {
 	padding: 0.7em;
 	cursor: pointer;
 }
+
+/* CONTACT BLOCK */
+
+.reach-out {
+	display: flex;
+	padding: 0em;
+	color: black;
+	justify-content: center;
+	align-content: center;
+}
+.reach-out-container {
+	padding: 10em 20em;
+	background-color: #242424;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+.contact-register .reach-out-container {
+	background: none;
+	border: solid black 3px;
+	border-radius: 25px;
+	padding: 5em 8em;
+}
+.reach-out-text {
+	
+}
+.reach-out-contact #contact-form {
+	background-color: white;
+	padding: 2em;
+	color: black;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em 4em;
+}
+.contact-register .reach-out-contact #contact-form {
+	gap: 3em 6em;
+}
+#contact-form div {
+	display: flex;
+	flex-direction: column;
+}
+#contact-form div button {
+	display: block;
+	padding: 0em;
+}
+
 /* UTILITIES */
+
 a {
 	text-decoration: none;
 	color: black;
