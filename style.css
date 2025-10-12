@@ -99,7 +99,7 @@ navbar {
 .intro {
 	display: flex;
 	justify-content: space-between;
-	background: black url('images/intro-page-larger.png') repeat;
+	background: #242424;
 	background-size: auto;
 	height: 1080px;
 	padding: 123px;
@@ -115,6 +115,8 @@ navbar {
 .carousel-track-container {
   overflow: hidden;
   width: 100%;
+  border: solid black 10px;
+  border-radius: 50px;
 }
 
 .carousel-track {
@@ -153,28 +155,42 @@ navbar {
 	width: 550px;
 	padding-top: 2em;
 	margin: 0;
+	background: white;
+	border: solid black 5px;
+	border-radius: 50px;
 }
-.intro-text h1, .intro-text h2, .intro-text h3 {
+.intro-text div {
 	opacity: 0
 }
 .intro-text h1 {
 	text-align: center;
-	margin-top: 25px;
-	padding-bottom: 40px;
-
+	margin: 10px 30px;
+	padding: 40px;
+	background: #242424;
+	border-radius: 25px;
 }
 .intro-text {
 	color: white;
 }
-#intro-h1.animate {
-	animation: fade-in 0.5s ease-in forwards, slide-up 0.6s ease-out forwards;
-}
 .intro-text-primary {
-	max-width: 70%;
-	justify-self: flex-start;
-	margin: 5px 100px;
+	margin: 5px 35px;
 	text-shadow: color(display-p3 0.534 0.724 0.775) 0px 1px 5px;
 	color: rgb(255, 255, 255);
+}
+.intro-text div:nth-of-type(1) {
+	background: #93E4F5;
+	border-radius: 25px;
+	margin: 0px 35px 20px 80px;
+	padding: 1px 0;
+}
+.intro-text div:nth-of-type(2) {
+	background: #d4d2d4;
+	border-radius: 25px;
+	padding: 1px 0px;
+	margin: 0px 80px 20 35px;
+}
+.intro-text .tx-custom {
+	font-size: 2.8em;
 }
 #intro-primary2, #intro-secondary2 {
 	line-height: 45px;
@@ -186,9 +202,8 @@ navbar {
 	animation: fade-in 0.5s ease-in forwards, slide-up 0.6s ease-out forwards;
 }
 .intro-text-secondary {
-	max-width: 70%;
 	justify-self: flex-start;
-	margin: 5px 55px;
+	margin: 5px 35px;
 	color: rgba(0, 0, 0, 0.85);
 }
 #intro-secondary.animate {
@@ -198,7 +213,7 @@ navbar {
 	animation: fade-in 0.5s ease-in forwards, slide-up 0.6s ease-out forwards;
 }
 .intro-text h2 {
-	margin-top: 70px;
+	margin-top: 30px;
 	padding: 10px 0;
 }
 .intro-text-box h3 {
@@ -968,8 +983,60 @@ a {
 	font-family: "Roboto", sans-serif;
 }
 
+.appear {
+	display: none;
+}
 
+/* PHONE SCALING */
 
+@media (max-width: 768px) {
+	.disappear {
+		display: none;
+	}
+	.appear {
+		display: block;
+	}
+	navbar {
+		display: none;
+	}
+	.hero {
+		display: grid;
+		justify-content: center;
+		margin-bottom: 10em;
+	}
+	.hero-content h1 {
+		justify-self: center;
+		padding: 0px;
+		margin: 0px;
+		font-size: 3em;
+	}
+	.hero-content h2 {
+		font-size: 4em;
+	}
+	.hero-content {
+		justify-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	.hero .hero-image {
+		margin: 2em;
+	}
+	.intro {
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.intro-text-box {
+		height: 1080px;
+		flex: 1 1 768px;
+	}
+	.intro .carousel {
+		padding: 10em;
+	}
+	.intro .carousel {
+		flex: 1 1 768px;
+	}
+}
 
 
 

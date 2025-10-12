@@ -134,20 +134,6 @@ const track = document.querySelector('.carousel-track');
 
 
 
-
-//	for the h1 "intro" text animator
-document.addEventListener("DOMContentLoaded", () => {
-  const animatedIntroTextH1 = document.getElementById("intro-h1");
-
-  function checkScroll() {
-	if (window.scrollY > 350) {
-	  animatedIntroTextH1.classList.add("animate");
-	  window.removeEventListener("scroll", checkScroll);
-	}
-  }
-
-  window.addEventListener("scroll", checkScroll);
-});
 //	for the primary "intro" text animator
 document.addEventListener("DOMContentLoaded", () => {
   const animatedIntroTextPrimary = document.getElementById("intro-primary");
