@@ -64,11 +64,12 @@ navbar {
 /* HERO */
 .hero {
 	display: flex;
+	flex-wrap: wrap;
 	background: black url('images/chalky-bg.jpg') repeat;
 	background-size: cover; /* or 'auto' for natural size */
 	animation: move-bg 1s linear infinite;
 	background-color: black;
-	padding: 2em;
+	padding: 0em;
 	padding-top: 8em;
 	justify-content: space-evenly;
 }
@@ -77,9 +78,8 @@ navbar {
 	font-size: 1.5em;
 	color: rgb(255, 255, 255);
 	flex-direction: column;
-	padding: 0 5em 2em 0em;
 	align-self: center;
-	
+	flex-shrink: 1;
 }
 .hero-image {
 	display: block;
@@ -87,6 +87,7 @@ navbar {
 	max-width: 720px;
 	opacity: 0.2;
 	border-radius: 10px;
+	flex-shrink: 1;
 }
 .hero-content h1, .hero-content h3 {
 	margin-left: 25px;
@@ -99,14 +100,17 @@ navbar {
 .intro {
 	display: flex;
 	justify-content: space-between;
+	gap: 7em;
 	background: #242424;
 	background-size: auto;
-	height: 1080px;
 	padding: 123px;
 }
 .carousel {
   display: flex;
-  width: 1000px;   /* adjust as needed */
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  width: 1000px;
+  min-width: 1000px;
   align-items: center;
   overflow: hidden;
   position: relative;
@@ -126,7 +130,7 @@ navbar {
 
 .carousel-track iframe {
   min-width: 100%;  /* one iframe per "slide" */
-  height: 490px;    /* adjust height */
+  min-height: 490px;    /* adjust height */
   border: none;
   border-radius: 25px;
   pointer-events: none;
@@ -148,16 +152,18 @@ navbar {
 .carousel-btn.left { left: 10px; }
 .carousel-btn.right { right: 10px; }
 
-
 .intro-text-box {
+	display: flex;
 	align-self: center;
-	height: 1000px;
-	width: 550px;
+	max-height: 1000px;
+	max-width: 550px;
 	padding-top: 2em;
 	margin: 0;
 	background: white;
 	border: solid black 5px;
 	border-radius: 50px;
+	flex-wrap: wrap;
+	flex-shrink: 1;
 }
 .intro-text div {
 	opacity: 0
@@ -227,7 +233,7 @@ navbar {
 .outro {
 	display: flex;
 	flex-direction: column;
-	background: #e2e2e2;
+	background: #f1f1f1;
 	padding: 2em;
 }
 
@@ -987,7 +993,34 @@ a {
 	display: none;
 }
 
+
+
+
 /* PHONE SCALING */
+
+
+
+
+
+@media (max-width: 1850px) {
+	.intro {
+		flex-direction: column-reverse;
+	}
+	.intro .carousel {
+		align-self: center;
+		min-width: 0px;
+		flex-shrink: 1;
+	}
+	.intro-text-box {
+		
+	}
+}
+@media (max-width: 1000px) {
+
+	.intro .carousel {
+	display: none;
+	}
+}
 
 @media (max-width: 768px) {
 	.disappear {
@@ -996,13 +1029,18 @@ a {
 	.appear {
 		display: block;
 	}
-	navbar {
+	.nav-logo {
 		display: none;
+		padding: 0;
+	}
+	.nav-content {
+		margin: 0px;
+		justify-content: space-between;
 	}
 	.hero {
+		padding-top: 12em;
 		display: grid;
 		justify-content: center;
-		margin-bottom: 10em;
 	}
 	.hero-content h1 {
 		justify-self: center;
@@ -1022,19 +1060,41 @@ a {
 		margin: 2em;
 	}
 	.intro {
-		padding: 0;
-		display: flex;
-		flex-wrap: wrap;
+		padding: 1em;
+		flex-direction: column;
 	}
 	.intro-text-box {
 		height: 1080px;
 		flex: 1 1 768px;
 	}
-	.intro .carousel {
-		padding: 10em;
+	.outro {
+		padding: 0;
 	}
-	.intro .carousel {
-		flex: 1 1 768px;
+	.outro-text {
+		padding: 4em 0em;
+		border-left: none;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	.outro-text h2 {
+		justify-self: center;
+		transform: translateX(0);
+		width: 760px;
+	}
+	.outro-text .outro-logo {
+		animation: shakeSmooth 3s linear infinite;
+		max-width: 250px;
+		max-height: 250px;
+	}
+	.outro-images {
+		display: none;
+	}
+	.act {
+		padding: 0;
+	}
+	.act-text {
+		padding: 2em;
 	}
 }
 
