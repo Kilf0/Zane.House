@@ -2,6 +2,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 img, video {
@@ -41,19 +42,18 @@ img, video {
 navbar {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	max-width: none;
-	padding: 25px;
+	max-width: 100%;
+	padding: 25px 50px;
+	box-sizing: border-box;
+	
 }
 .nav-content {
 	display: flex;
 	gap: 4em;
-	margin-right: 50px;
 	font-size: 1.2em;
 	align-items: center;
 }
 .nav-logo {
-	margin-left: 50px;
 	align-self: center;
 	max-width: 80px;
 	max-height: 80px;
@@ -1023,6 +1023,7 @@ a {
 }
 
 @media (max-width: 768px) {
+
 	.disappear {
 		display: none;
 	}
@@ -1033,9 +1034,14 @@ a {
 		display: none;
 		padding: 0;
 	}
+	navbar {
+		margin: 0;
+		justify-content: center;
+	}
 	.nav-content {
 		margin: 0px;
 		justify-content: space-between;
+		width: auto;
 	}
 	.hero {
 		padding-top: 12em;
@@ -1051,12 +1057,16 @@ a {
 	.hero-content h2 {
 		font-size: 4em;
 	}
+	.hero-content h3 {
+		margin: 0;
+	}
 	.hero-content {
 		justify-items: center;
 		margin: 0;
 		padding: 0;
 	}
 	.hero .hero-image {
+		max-width: 500px;
 		margin: 2em;
 	}
 	.intro {
@@ -1095,6 +1105,9 @@ a {
 	}
 	.act-text {
 		padding: 2em;
+	}
+	h1, h2, h3, h4, p {
+		text-wrap: wrap;
 	}
 }
 
