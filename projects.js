@@ -33,35 +33,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-const projectHeroRemoval = document.getElementById("project-hero-id");
+	const projectHeroRemoval = document.getElementById("project-hero-id");
+	const status = document.getElementById("status");
+	const projectPageDropDownButton = document.getElementById("project-dropdown-button");
+	const projectPageDropDown = document.getElementById("project-dropdown");
+	const projectPageDropDownContent = document.getElementById("project-dropdown-content");
 
-	if (!sessionStorage.getItem("hasVisited")) {
-    	sessionStorage.setItem("hasVisited", "true");
-		} else {
-			projectHeroRemoval.style.display = "none"
+	if (projectPageDropDownButton) {
+		projectPageDropDownButton.addEventListener("click", () => {
+			if (window.innerWidth > 768) {
+				projectPageDropDown.classList.add("open");
+				projectPageDropDownButton.classList.add("open");
+				projectPageDropDownContent.classList.add("open");
+				sessionStorage.setItem("clicked", "true");
+
+				if (status) status.textContent = "Was Clicked";
+			}
+		});
+	}
+
+	window.addEventListener("scroll", () => {
+		const projectDropDownY = window.scrollY || document.documentElement.scrollTop;
+
+		if (projectDropDownY > 768) {
+			if (!sessionStorage.getItem("hasVisited")) {
+				sessionStorage.setItem("hasVisited", "true");
+			} else if (projectHeroRemoval) {
+				projectHeroRemoval.style.display = "none";
+			}
+
+			if (window.innerWidth > 768 && sessionStorage.getItem("clicked")) {
+				projectPageDropDown.classList.add("open");
+				projectPageDropDownButton.classList.add("open");
+				projectPageDropDownContent.classList.add("open");
+			}
 		}
+	});
 });
 
-const status = document.getElementById("status");
-const projectPageDropDownButton = document.getElementById("project-dropdown-button");
-const projectPageDropDown = document.getElementById("project-dropdown");
-const projectPageDropDownContent = document.getElementById("project-dropdown-content");
-
-projectPageDropDownButton.addEventListener("click", () => {
-	
-	projectPageDropDown.classList.add("open");
-	projectPageDropDownButton.classList.add("open");
-	projectPageDropDownContent.classList.add("open");
-	sessionStorage.setItem("clicked", "true");
-	status.textContent = "Was Clicked";
-	
- 
-});
-		if (sessionStorage.getItem("clicked")) {
-			projectPageDropDown.classList.add("open");
-			projectPageDropDownButton.classList.add("open");
-			projectPageDropDownContent.classList.add("open");
-		  }
 
  const track = document.querySelector(".carousel-track-projects");
  const slides = Array.from(track.children);

@@ -511,16 +511,22 @@ navbar {
 	animation: fadeInLeft 1.1s ease forwards;
 }
 
-
+.projects-upcoming {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1;
+	flex-wrap: wrap;
+}
 .projects-upcoming-content {
 	background-color: white;
 }
 .carousel-projects {
   display: flex;
-  width: 1500px;   /* adjust as needed */
+  max-width: 1500px;   /* adjust as needed */
   align-items: center;
   overflow: hidden;
   position: relative;
+  flex: 1 1;
 }
 
 .carousel-track-container-projects {
@@ -1109,17 +1115,187 @@ a {
 	h1, h2, h3, h4, p {
 		text-wrap: wrap;
 	}
+	
+	.projects-hero {
+		display: none;
+	}
+	.projects-container {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.projects-text-1 {
+		order: -1;
+		max-width: 100%;
+	}
+	.projects-text-1 h2 {
+		line-height: 60px;
+	}
+	.projects-text-1 p, .projects-text-1 h2 {
+		max-width: 100%;
+	}
+	#project-dropdown-button, #project-dropdown-button:hover {
+		padding: none;
+		color: black;
+		background: none;
+		cursor: auto;
+		opacity: 1;
+	}
+	#project-dropdown-content, #project-dropdown {
+		opacity: 1;
+		transform: translate(0);
+	}
+	#projects-reach-out {
+		padding: 3em;
+	}
+	#projects-reach-out .reach-out-container {
+		padding: 5em;
+	}
+	#projects-reach-out .reach-out-text .btn:hover {
+		background-color: white;
+		color: black;
+	}
+	#projects-reach-out .reach-out-contact {
+		display: none;
+	}
+	.projects-upcoming {
+		display: none;
+	}
+	.contact-hero-text h2 {
+		max-width: 100%;
+	}
+	.contact-register-text {
+		padding: 1em 8em;
+	}
+	.contact-register-text h2 {
+		max-width: 100%;
+		text-align: center;
+	}
+	#contact-page-form {
+		display: none;
+		padding: 0;
+	}
+	.contact-phone {
+		padding: 2em;
+	}
+	.contact-phone h2 {
+		padding: 1em 4em;
+		line-height: 60px;
+		text-align: center;
+	}
+	.phone-number {
+		flex-direction: column;
+	}
+	#text-phone, #call-phone {
+		max-height: 500px;
+	}
 }
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 440px) {
+	.tx-megaxl {
+		font-family: "Poppins", sans-serif;
+		font-size: 2.5em;
+		font-weight: 800;
+		line-height: 20px;
+	}
+	.tx-mega {
+		font-family: "Poppins", sans-serif;
+		font-size: 2.0em;
+		font-weight: 800;
+		line-height: 20px;
+	}
+	.tx-xlg {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.5em;
+		font-weight: 700;
+		line-height: 20px;
+	}
+	.tx-lg {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.2em;
+		font-weight: 600;
+		line-height: 20px;
+	}
+	.tx-md {
+		font-family: "Poppins", sans-serif;
+		font-size: 0.8em;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	.tx-sm {
+		font-family: "Poppins", sans-serif;
+		font-size: 0.5em;
+		font-weight: 400;
+		line-height: 20px;
+	}
+	.tx-btn {
+		font-family: "Poppins", sans-serif;
+		font-size: 0.8em;
+		font-weight: 600;
+		line-height: 20px;
+	}
+	
+	
+	.nav-content {
+		gap: 30px;
+	}
+	.nav-content .YT {
+		background: red;
+		color: white;
+	}
+	.hero-content {
+		font-size: 1.2em;
+	}
+	#intro-h1 {
+		font-size: 4em;
+	}
+	.intro-text {
+		line-height: 50px;
+	}
+	#intro-primary {
+		max-width: 100%;
+	}
+	.intro-text div:nth-of-type(1) {
+		margin: 0px 20px 20px 45px;
+		padding: 1px 0;
+	}
+	.intro-text div:nth-of-type(2) {
+		background: #d4d2d4;
+		border-radius: 25px;
+		padding: 1px 0px;
+		margin: 0px 45px 20px 20px;
+	}
+	.outro-text h1 {
+		font-size: 3.3em;
+		margin: 25px 0;
+	}
+	.outro-text h2 {
+		font-size: 2em;
+		text-wrap: wrap;
+		box-sizing: border-box;
+		padding: 1.1em;
+		line-height: 50px;
+	}
+	.outro-text .outro-logo {
+		max-width: 200px;
+	}
+	.act {
+	}
+	.act-text {
+		font-size: 2em;
+		padding: 4em 0;
+		box-sizing: border-box;
+	}
+	.act-text h1, .act-text h2 {
+		line-height: 65px;
+	}
+	.footer .logo {
+		display: none;
+	}
+	.footer .socials {
+		max-width: 80px;
+	}
+}
 
 
 

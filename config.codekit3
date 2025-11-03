@@ -17,6 +17,17 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/contact-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/contact-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/contact.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -845,6 +856,17 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/main-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/main-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/main.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -852,6 +874,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/main-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/projects-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/projects-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
